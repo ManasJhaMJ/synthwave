@@ -138,6 +138,13 @@ body {
   text-align: center;
 }
 
+.games {
+  padding-top: 3rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .card .glassmorphic-card {
