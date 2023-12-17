@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Ephesis&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "audiowide", cursive;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: static;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.black {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.landing {
+  position: absolute;
+  padding-top: 14rem;
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Ephesis", cursive;
+  font-size: 10.3rem;
+  font-weight: 600;
+  color: green;
+  text-shadow: 0 0 10px yellow;
+}
+.heading2 {
+  font-weight: 300;
+  color: white;
+  text-shadow: 0 0 10px green;
+}
+
+#more {
+  padding: 100px;
+  background: url(../images/sun.gif) no-repeat center center/cover;
+  text-align: center;
+}
+
+#more h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: green;
+  text-shadow: 0 0 10px yellow;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  width: 320px;
+  height: 500px;
+  padding: 40px 30px;
+  margin: 28px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 70%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .card .glassmorphic-card {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .card .glassmorphic-card {
+    width: 400px;
+    height: 600px;
+    margin: 50px;
+  }
+}
