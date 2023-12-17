@@ -5,7 +5,7 @@ VanillaTilt.init(document.querySelectorAll(".glassmorphic-card"), {
     "max-glare": 1,
 });
 
-ScrollReveal({ reset: true });
+ScrollReveal({ reset: false });
 ScrollReveal().reveal('.heading', { delay: 1300 });
 ScrollReveal().reveal('.heading2', { delay: 2000 });
 ScrollReveal().reveal('.card', { delay: 700 });
